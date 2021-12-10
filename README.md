@@ -16,9 +16,6 @@
 1. **我在其他平台直播，可以使用这款软件吗？**
 <br>不可以，因为这款软件基于B站弹幕姬开发，无法读取其他平台的弹幕。
 
-2. 
-3.
-4.
 
 ## 核心维护者
 - [@NearlyHeadlessJack](https://github.com/NearlyHeadlessJack)
