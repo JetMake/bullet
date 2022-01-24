@@ -11,12 +11,12 @@ from tkinter import filedialog
 #==================================
 
 #窗口类=============================
-class App:
-    Fpath = "Data-10313214-20220116.txt"
+class C172:
+    fpath = "Data-10313214-20220116.txt"
     PlaneType = 0
     def __init__(self, root):
         #setting title
-        root.title("undefined")
+        root.title("航前计划")
         #setting window size
         width=292
         height=276
@@ -90,25 +90,46 @@ class App:
         GLabel_436["text"] = self.labletext
         GLabel_436.place(x=10,y=70,width=278,height=30)
 
+    def CallBeacon(self,type):
+        print(type)
+        print(self.fpath)
+        if type == 1:
+
+        elif type == 2:
+
+        elif type == 3:
+
+        else:
+
+
+
+
+
+
     def GButton_731_command(self):
         PlaneType = 1
         print(PlaneType)
+        self.CallBeacon(PlaneType)
+
+
 
 
     def GButton_747_command(self):
         PlaneType = 2
         print(PlaneType)
+        self.CallBeacon(PlaneType)
 
 
     def GButton_937_command(self):
         PlaneType = 3
         print(PlaneType)
+        self.CallBeacon(PlaneType)
 
 
     def GButton_311_command(self):
         print("c")
-        Fpath = filedialog.askopenfilename()
-        self.labletext = "已选择"+ Fpath
+        self.fpath = filedialog.askopenfilename()
+        self.labletext = "已选择"+ self.fpath
         print(self.labletext)
 
 
