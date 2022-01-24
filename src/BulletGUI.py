@@ -11,7 +11,7 @@ from tags import App
 #==================================
 
 
-#创建窗口===========================
+
 #logo显示窗口
 logo = Tk()
 logo.overrideredirect(True)
