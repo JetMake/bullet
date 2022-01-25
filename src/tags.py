@@ -8,12 +8,13 @@
 import tkinter as tk
 import tkinter.font as tkFont
 from tkinter import filedialog
+import beacon
 #==================================
 
 #窗口类=============================
-class C172:
+class App:
     fpath = "Data-10313214-20220116.txt"
-    PlaneType = 0
+    planeType = 0
     def __init__(self, root):
         #setting title
         root.title("航前计划")
@@ -92,45 +93,37 @@ class C172:
 
     def CallBeacon(self,type):
         print(type)
-        print(self.fpath)
-        if type == 1:
-
-        elif type == 2:
-
-        elif type == 3:
-
-        else:
-
-
+        print("传参前"+self.fpath)
+        beacon.Test(self.fpath)
 
 
 
 
     def GButton_731_command(self):
-        PlaneType = 1
-        print(PlaneType)
-        self.CallBeacon(PlaneType)
+        self.planeType = 1
+        print(self.planeType)
+        self.CallBeacon(self.planeType)
 
 
 
 
     def GButton_747_command(self):
-        PlaneType = 2
-        print(PlaneType)
-        self.CallBeacon(PlaneType)
+        self.planeType = 2
+        print(self.planeType)
+        self.CallBeacon(self.planeType)
 
 
     def GButton_937_command(self):
-        PlaneType = 3
-        print(PlaneType)
-        self.CallBeacon(PlaneType)
+        self.planeType = 3
+        print(self.planeType)
+        self.CallBeacon(self.planeType)
 
 
     def GButton_311_command(self):
         print("c")
         self.fpath = filedialog.askopenfilename()
         self.labletext = "已选择"+ self.fpath
-        print(self.labletext)
+        print("调用完文件寻找"+self.labletext)
 
 
     labletext="例如:Data-10313214-20220116.txt"
