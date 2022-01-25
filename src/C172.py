@@ -1,7 +1,7 @@
 import tkinter as tk
 import tkinter.font as tkFont
 
-class App:
+class C172:
     def __init__(self, root):
         #setting title
         root.title("undefined")
@@ -97,5 +97,5 @@ class App:
         GLabel_258.place(x=20,y=180,width=182,height=30)
 if __name__ == "__main__":
     root = tk.Tk()
-    app = App(root)
+    app = C172(root)
     root.mainloop()
